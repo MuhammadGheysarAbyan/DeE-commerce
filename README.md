@@ -23,12 +23,19 @@ DE-Ecommerce bertujuan untuk menyederhanakan proses belanja online dan memberika
 
 ---
 
-## Author
-1. **Abyan**
+## Kontributor
+|   Author    | Header 2 | Header 3 |
+| --------    | -------- | -------- |
+| **Abyan**   | Data 1   | Data 2   |
+| **Imron**   | Data 3   | Data 4   |
+| **Septian** | Data 5   | Data 6   |
 
+1. **Abyan**
+   
    <img src="https://avatars.githubusercontent.com/u/176265092?s=100&v=4" alt="Abyan" width="50px" />
 
 2. **Imron**  
+   
    <img src="https://avatars.githubusercontent.com/u/144302456?s=400&u=0c1b0b79fa2400b4adcbffeb7a70ffc6a0dfdcdd&v=4" alt="Imron" width="50px" />
 
 3. **Septian**
