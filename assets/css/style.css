@@ -1261,9 +1261,7 @@ text-align: left;
   margin: 0 auto;
   padding-bottom: 35px;
 }
-.testimonial_area .testimonial_carosel .item .media .media-left {
-  padding-right: 30px;
-}
+
 .testimonial_area .testimonial_carosel .item .media .media-left a img {
     width: auto;
     height: 110px;
@@ -1355,29 +1353,21 @@ text-align: left;
   color:#999 !important; 
 }
 
-.our_partners_area .book_now_aera {
-  
-  padding: 50px 0;
-}
-.our_partners_area .book_now_aera .book_now .booking_text {
-  padding-top: 8px;
-}
-.our_partners_area .book_now_aera .book_now .booking_text h4 {
- 
-  color: #364167;
-    line-height: 30px;
-    font-size: 20px;
-    font-weight: 600;
-
-}
-.our_partners_area .book_now_aera .book_now .booking_text p {
-    color: #364167;
-    font-size: 16px;
-    padding-top: 20px;
+.partners {
+  display: flex;               /* Menggunakan flexbox */
+  justify-content: center;     /* Menempatkan item di tengah secara horizontal */
+  align-items: center;         /* Menempatkan item di tengah secara vertikal (jika diperlukan) */
+  gap: 40px;                  /* Jarak antar gambar menggunakan gap */
+  flex-wrap: wrap;            /* Memungkinkan gambar untuk membungkus ke baris berikutnya jika tidak ada ruang */
 }
 
+.partners .item {
+  margin: 40px;               /* Menambahkan margin di sekitar setiap item (opsional) */
+}
 
-
+.partners .item img {
+  max-width: 100px;           /* Menentukan lebar maksimum gambar */
+}
 
 /* End Our Partners Area */
 /*----------------------------------
