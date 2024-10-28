@@ -25,12 +25,10 @@ DE-Ecommerce bertujuan untuk menyederhanakan proses belanja online dan memberika
 
 ## Author
 1. **Abyan**
-   <img src="https://avatars.githubusercontent.com/u/176265092?s=100&v=4" alt="Abyan" width="50px" style="border-radius:10px;" />
-   ---
+   <img src="https://avatars.githubusercontent.com/u/176265092?s=100&v=4" alt="Abyan" width="50px" />
+
 2. **Imron**  
-   <img src="https://avatars.githubusercontent.com/u/144302456?s=400&u=0c1b0b79fa2400b4adcbffeb7a70ffc6a0dfdcdd&v=4" alt="Imron" width="50px" style="border-radius:10px;" />
-   ---
+   <img src="https://avatars.githubusercontent.com/u/144302456?s=400&u=0c1b0b79fa2400b4adcbffeb7a70ffc6a0dfdcdd&v=4" alt="Imron" width="50px" />
+
 3. **Septian**
-   <img src="https://avatars.githubusercontent.com/u/177186633?v=4" alt="Septian" width="50px" style="border-radius:10px;" />
-   ---
-   
+   <img src="https://avatars.githubusercontent.com/u/177186633?v=4" alt="Septian" width="50px" />
