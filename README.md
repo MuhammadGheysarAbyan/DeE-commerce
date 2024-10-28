@@ -27,5 +27,5 @@ Anda dapat menyesuaikan deskripsi ini sesuai dengan kebutuhan spesifik proyek An
 
 ## Author :
 1. Abyan
-2. Imron <img src="https://avatars.githubusercontent.com/u/144302456?s=400&u=0c1b0b79fa2400b4adcbffeb7a70ffc6a0dfdcdd&v=4" alt="Deskripsi Gambar" width="500" />
+2. Imron <img src="https://avatars.githubusercontent.com/u/144302456?s=400&u=0c1b0b79fa2400b4adcbffeb7a70ffc6a0dfdcdd&v=4" alt="Deskripsi Gambar" width="50px" />
 3. Septian
