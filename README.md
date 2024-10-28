@@ -1,7 +1,7 @@
-# Version 2
+# Version 2 
+
 ## Website Testing-DEE
 ![testing-DEE](https://dee.co.id/wp-content/uploads/2024/09/Yellow-and-Black-Flat-Illustrative-Honey-Bee-Logo-1-150x150.png)
-
 
 [Link Testing-DEE](https://testing-deecoid.vercel.app)
 
@@ -23,9 +23,8 @@ DE-Ecommerce bertujuan untuk menyederhanakan proses belanja online dan memberika
 
 ---
 
-Anda dapat menyesuaikan deskripsi ini sesuai dengan kebutuhan spesifik proyek Anda.
-
-## Author :
-1. Abyan
-2. Imron <img src="https://avatars.githubusercontent.com/u/144302456?s=400&u=0c1b0b79fa2400b4adcbffeb7a70ffc6a0dfdcdd&v=4" alt="Deskripsi Gambar" width="50px" />
-3. Septian
+## Author
+1. **Abyan**
+2. **Imron**  
+   <img src="https://avatars.githubusercontent.com/u/144302456?s=400&u=0c1b0b79fa2400b4adcbffeb7a70ffc6a0dfdcdd&v=4" alt="Deskripsi Gambar" width="50px" style="border-radius:10px;" />
+3. **Septian**
