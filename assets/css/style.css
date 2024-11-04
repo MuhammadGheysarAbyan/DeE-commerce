@@ -52,81 +52,51 @@ This files contents are outlined below.
 /*----------------------------------
    1.Start button
 ------------------------------------*/
-.btn{
-padding: 18px 50px;
-    font-size: 20px;
-    font-weight: 500;
-    border-radius: 30px;
-      display: inline-block;
-    border: 0;
-     text-transform: uppercase;
-    position: relative;
-    z-index: 2;
-     text-decoration: none !important;
+.btn {
+  padding: 18px 50px;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 5px;
+  display: inline-block;
+  border: 0;
+  /* text-transform: uppercase; */
+  position: relative;
+  z-index: 2;
+  text-decoration: none !important;
+  transition: background-color 0.3s ease; /* Transisi pada perubahan warna latar belakang */
+}
+
+.btn btn-default {
+  border-radius: 0;
 }
 
 .btn-default {
-   background: #2e7ffe !important;
-    color: #fff !important;
+  background: #2e7ffe !important; /* Warna latar belakang default */
+  color: #fff !important; /* Warna teks */
 }
-.btn-default:before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-        background:#504cf5 !important;
-  
-    top: 0;
-    bottom: 0;
-    left: 0;
-    display: block;
-    right: 0;
-    transform: scaleY(0);
-    transform-origin: 50%;
-    transition-property: transform;
-    transition-duration: 0.3s;
-    transition-timing-function: ease-out;
-}
-.btn-default:hover:before, .btn-default:focus:before {
-    transform: scaleY(1);
-    color: #fff !important;
-    border-radius: 30px;
+
+.btn-default:hover, .btn-default:focus {
+  background: #649efc !important; /* Ganti warna latar belakang saat hover */
 }
 
 .btn-primary {
-   background: #504cf5 !important;
-    color: #fff !important;
-  }
-   
-.btn-primary:before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-        background:#f356c9 !important;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    display: block;
-    right: 0;
-    transform: scaleY(0);
-    transform-origin: 50%;
-    transition-property: transform;
-    transition-duration: 0.3s;
-    transition-timing-function: ease-out;
-}
-.btn-primary:hover:before, .btn-primary:focus:before {
-    transform: scaleY(1);
-    color: #fff !important;
-    border-radius: 30px;
-}
-a:before, a:after, .btn:before, .btn:after, button:before, button:after {
-    transition: all 300ms linear 0s;
+  background: #504cf5 !important; /* Warna latar belakang default untuk primary */
+  color: #fff !important; /* Warna teks */
 }
 
+.btn-primary:hover, .btn-primary:focus {
+  background: #f356c9 !important; /* Ganti warna latar belakang saat hover */
+}
+
+a:before, a:after, .btn:before, .btn:after, button:before, button:after {
+  transition: all 300ms linear 0s;
+}
 
 a {
-      color: #fff !important;
-    text-decoration: none !important;
+  color: #fff !important;
+  text-decoration: none !important;
 }
+
 
 /*----------------------------------
    End button
@@ -470,6 +440,56 @@ body {
   background-color: #004085;
   color: white;
 }
+/* Gaya Dasar untuk Tombol */
+.buttons {
+  display: flex; /* Mengatur tombol dalam satu baris */
+  gap: 10px; /* Jarak antar tombol */
+}
+
+.btn-green,
+.btn-blue {
+  padding: 10px 20px; /* Padding untuk tombol */
+  color: #fff; /* Warna teks */
+  border: none; /* Menghilangkan border */
+  border-radius: 5px; /* Sudut melingkar */
+  text-decoration: none; /* Menghilangkan garis bawah */
+  font-size: 16px; /* Ukuran font */
+  transition: transform 0.3s ease, background-color 0.3s ease; /* Transisi untuk animasi */
+  display: inline-block; /* Agar elemen dapat menerima padding */
+  cursor: pointer; /* Mengubah kursor menjadi pointer */
+}
+
+
+
+/* Animasi saat tombol di-hover */
+.btn-green:hover,
+.btn-blue:hover {
+  transform: translateY(-5px); /* Mengangkat tombol sedikit */
+  background-color: #4dcc53; /* Warna hijau lebih gelap untuk hover */
+}
+
+/* Untuk tombol biru saat di-hover */
+.btn-blue:hover {
+  background-color: #007B9A; /* Warna biru lebih gelap untuk hover */
+}
+
+/* Animasi muncul */
+.btn-green,
+.btn-blue {
+  animation: fadeIn 0.5s ease forwards; /* Menambahkan animasi saat muncul */
+}
+
+@keyframes fadeIn {
+  0% {
+      opacity: 0; /* Mulai dari transparan */
+      transform: translateY(10px); /* Mulai sedikit lebih rendah */
+  }
+  100% {
+      opacity: 1; /* Menjadi sepenuhnya terlihat */
+      transform: translateY(0); /* Kembali ke posisi normal */
+  }
+}
+
 .image-section {
   position: relative;
   max-width: 50%;
@@ -1223,9 +1243,8 @@ text-align: left;
   padding-top: 60px;
 }
 .testimonial_area .testimonial_carosel .item .media {
-  max-width: 140px;
-  margin: 0 auto;
-  padding-bottom: 35px;
+  display: flex; /* Menggunakan flexbox */
+  align-items: center; /* Rata tengah */
 }
 
 .testimonial_area .testimonial_carosel .item .media .media-left a img {
@@ -1234,8 +1253,17 @@ text-align: left;
     border-radius: 50%;
 }
 .testimonial_area .testimonial_carosel .item .media .media-body {
-  padding-top: 40px;
+  padding-top: 20px; /* Sesuaikan padding */
+  flex: 1; /* Izinkan mengambil ruang yang tersedia */
 }
+
+.testimonial_area .testimonial_carosel .item .media .media-body h1 {
+  white-space: normal; /* Izinkan pembungkusan teks */
+  overflow: visible; /* Pastikan overflow diperbolehkan */
+  width: auto; /* Izinkan ukuran otomatis */
+  max-width: 100%; /* Batasi lebar pada kontainer */
+}
+
 .testimonial_area .testimonial_carosel .item .media .media-body h4 {
   font: 700 14px "Roboto", sans-serif;
   text-transform: uppercase;
@@ -1246,6 +1274,26 @@ text-align: left;
   color: #555555;
   padding-top: 5px;
 }
+.testimonial_carosel .item {
+  text-align: center; /* Untuk membuat semua teks di dalam item menjadi rata tengah */
+}
+
+.testimonial_carosel .item .media {
+  display: flex; /* Menggunakan flexbox untuk layout */
+  align-items: center; /* Menjaga elemen di tengah vertikal */
+  justify-content: center; /* Menjaga elemen di tengah horizontal */
+}
+
+.testimonial_carosel .item .media-left {
+  margin-right: 15px; /* Beri sedikit ruang antara gambar dan teks */
+}
+
+.testimonial_carosel .item img {
+  width: 100px; /* Sesuaikan ukuran gambar sesuai kebutuhan */
+  height: auto; /* Pastikan proporsional */
+  border-radius: 50%; /* Jika ingin gambar berbentuk bulat */
+}
+
 .body-slider{
     font-size: 20px;
     font-weight: 600;
@@ -1273,11 +1321,11 @@ text-align: left;
   display: block;
 }
 .testimonial_area .testimonial_carosel .item p .fa-quote-left {
-  text-align: right;
+  /* text-align: right; */
   padding-top: 5px;
 }
 .testimonial_area .testimonial_carosel .item p .fa-quote-right {
-  text-align: left;
+  /* text-align: left; */
   padding-bottom: 5px;
 }
 .testimonial_area .testimonial_carosel .owl-controls {
@@ -1287,7 +1335,7 @@ text-align: left;
   height: 10px;
   width: 10px;
   border: 2px solid #555555;
-  margin-left: 15px;
+  /* margin-left: 15px; */
   display: inline-block;
   transition: all 300ms linear 0s;
   border-radius: 50%;
@@ -1334,6 +1382,9 @@ text-align: left;
 .partners .item img {
   max-width: 100px;           /* Menentukan lebar maksimum gambar */
 }
+
+
+
 
 /* End Our Partners Area */
 /*----------------------------------
@@ -1415,31 +1466,6 @@ text-align: left;
 }
   
 
-.clip-polygon  {
-   background-color: #fff !important;
-  background: url(../images/s-left-1.png) left top no-repeat;
-
-   clip-path: polygon(0% 25%, 78% 0%, 90% 89%, 54% 101%, 0% 100%, 0% 75%, 0% 100%);
-   -webkit-clip-path: polygon(0% 25%, 78% 0%, 90% 89%, 54% 101%, 0% 100%, 0% 75%, 0% 100%) !important;
-
-}
-.clip-right {
-   background-color: #fff !important;
-  background: url(../images/s-left.png) right top no-repeat;
-    clip-path: polygon(14% 9%, 106% 34%, 100% 100%, 61% 100%, 0% 82%, 2% 72%, -1% 88%);
-    -webkit-clip-path: polygon(14% 9%, 106% 34%, 100% 100%, 61% 100%, 0% 82%, 2% 72%, -1% 88%) !important;
-}
-.py-200{
- padding: 201px 0px !important;
-    padding-bottom: 328px !important;
-}
-.py-45{
-  padding: 40px 0px !important;
-}
-.py_map_40{
-  padding-top: 40px;
-  padding-bottom: 0px !important;
-}
 
 
 
@@ -2218,8 +2244,99 @@ h3.blog-title {
   background: #296dc1;
   margin-top: 100px;
 }
-
 /*----------------contact-area End------------------*/
+
+/* FAQ */
+
+
+.faq .faq-container .faq-item {
+  background-color: var(--surface-color);
+  position: relative;
+  padding: 20px;
+  margin-bottom: 15px;
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.faq .faq-container .faq-item:last-child {
+  margin-bottom: 0;
+}
+
+.faq .faq-container .faq-item h3 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0 30px 0 0;
+  transition: 0.3s;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.faq .faq-container .faq-item h3 .num {
+  color: var(--accent-color);
+  padding-right: 5px;
+}
+
+.faq .faq-container .faq-item h3:hover {
+  color: var(--accent-color);
+}
+
+.faq .faq-container .faq-item .faq-content {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: 0.3s ease-in-out;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.faq .faq-container .faq-item .faq-content p {
+  margin-bottom: 0;
+  overflow: hidden;
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; */
+}
+
+/* .faq .faq-container .faq-item h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+} */
+
+.faq .faq-container .faq-item .faq-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 16px;
+  line-height: 0;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.faq .faq-container .faq-item .faq-toggle:hover {
+  color: var(--accent-color);
+}
+
+.faq .faq-container .faq-active h3 {
+  color: var(--accent-color);
+}
+
+.faq .faq-container .faq-active .faq-content {
+  grid-template-rows: 1fr;
+  visibility: visible;
+  opacity: 1;
+  padding-top: 10px;
+}
+
+.faq .faq-container .faq-active .faq-toggle {
+  transform: rotate(90deg);
+  color: var(--accent-color);
+}
+/* FAQ END */
 
 /*-----------------------20.sidebar-style-here-----------------------*/
 .search-sidebar form{
