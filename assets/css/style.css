@@ -2015,6 +2015,7 @@ ul {
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
 }
+
 .blog-details-content ul{
     margin-bottom: 30px;
 }
@@ -2782,6 +2783,161 @@ img.posi-r-img{
 .video-img{
   left: 0px !important;
 }
+}
+
+.Ke1 {
+  background: rgb(94, 94, 254);
+  color: white;
+  
+}
+.Ke2 {
+  background: rgb(240, 240, 243);
+  color: white;
+}
+.Ke3{
+  background: rgb(195, 195, 214);
+  color: rgb(248, 248, 248);
+}
+.Ke4{
+  background: rgb(240, 240, 243);
+    color: white;
+}
+.Ke5{
+  background: rgb(195, 195, 214);
+    color: white;
+}
+.fitur{
+  background: rgb(254, 254, 255);
+  color: rgb(248, 239, 239);
+}
+.fitur2{
+  background: rgb(254, 254, 255);
+  color: white;
+}
+.fitur3{
+  background: rgb(243, 243, 246);
+  color: white;
+}
+.fitur4{
+  background: rgb(237, 237, 243);
+  color: white;
+}
+.ke6{
+  background: rgb(195, 195, 214);
+  color: white;
+}
+.ke7{
+  background: rgb(195, 195, 214);
+  color: white;
+}
+.ke8{
+  background: rgb(248, 248, 250);
+  color: white;
+}
+.ke9{
+  background: rgb(195, 195, 214);
+  color: white;
+}
+.ke10{
+  background: rgb(242, 242, 242);
+  color: white;
+}
+.ke11{
+  background: rgb(195, 195, 214);
+  color: white;
+}
+.ke12{
+  background: rgb(241, 241, 247);
+  color: white;
+}
+.paket1{
+  background: rgb(59, 59, 152);
+  color: white;
+  font-weight: bold; /* Set font weight to bold */
+
+}
+.paket2{
+  background: rgb(59, 59, 152);
+  color: white;
+  font-weight: bold; /* Set font weight to bold */
+
+}
+.paket3{
+  background: rgb(59, 59, 152);
+  color: white;
+  font-weight: bold; /* Set font weight to bold */
+
+}
+.table{
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto
+}
+.custom1{
+  color: rgb(55, 236, 55);
+  font-weight: bold; /* Set font weight to bold */
+
+}
+.custom2{
+  color: rgb(55, 236, 55);
+  font-weight: bold; /* Set font weight to bold */
+
+}
+.custom3{
+  color: rgb(55, 236, 55);
+  font-weight: bold; /* Set font weight to bold */
+
+}
+.text1{
+  color: black;
+}
+.text2{
+  color: black;
+}
+.text3{
+  color: black;
+}
+.text4{
+  color: black;
+}
+.text5{
+  color: black;
+}
+.text6{
+  color: black;
+}
+.text7{
+  color: black;
+}
+.text8{
+  color: black;
+}
+.text9{
+  color: black;
+}
+.text10{
+  color: black;
+}
+.text11{
+  color: black;
+}
+.text13{
+  color: black;
+}
+.produk1{
+  color: black;
+    font-weight: bold; /* Set font weight to bold */
+}
+.produk2{
+  color: black;
+    font-weight: bold; /* Set font weight to bold */
+}
+.produk3{
+  color: black;
+    font-weight: bold; /* Set font weight to bold */
+}
+.Bandingkan{
+  text-align: center; 
 }
 /*------------------------------------
 24.Responsive End
